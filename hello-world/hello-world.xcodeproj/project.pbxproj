@@ -13,6 +13,18 @@
 		00BD9B7C1C50CB5F006C60FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00BD9B7B1C50CB5F006C60FA /* Assets.xcassets */; };
 		00BD9B7F1C50CB5F006C60FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00BD9B7D1C50CB5F006C60FA /* LaunchScreen.storyboard */; };
 		00BD9B8A1C50CB5F006C60FA /* hello_worldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00BD9B891C50CB5F006C60FA /* hello_worldTests.swift */; };
+		00BD9B961C5167E4006C60FA /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00BD9B941C5167E4006C60FA /* Bolts.framework */; };
+		00BD9B971C5167E4006C60FA /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00BD9B951C5167E4006C60FA /* Parse.framework */; };
+		00BD9B991C51680A006C60FA /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00BD9B981C51680A006C60FA /* AudioToolbox.framework */; };
+		00BD9B9B1C516812006C60FA /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00BD9B9A1C516812006C60FA /* CFNetwork.framework */; };
+		00BD9B9D1C516818006C60FA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00BD9B9C1C516818006C60FA /* CoreGraphics.framework */; };
+		00BD9B9F1C51681F006C60FA /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00BD9B9E1C51681F006C60FA /* CoreLocation.framework */; };
+		00BD9BA11C516825006C60FA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00BD9BA01C516825006C60FA /* QuartzCore.framework */; };
+		00BD9BA31C51682E006C60FA /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00BD9BA21C51682E006C60FA /* Security.framework */; };
+		00BD9BA51C516834006C60FA /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00BD9BA41C516834006C60FA /* StoreKit.framework */; };
+		00BD9BA71C51683E006C60FA /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00BD9BA61C51683E006C60FA /* SystemConfiguration.framework */; };
+		00BD9BA91C516849006C60FA /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 00BD9BA81C516849006C60FA /* libz.tbd */; };
+		00BD9BAB1C516854006C60FA /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 00BD9BAA1C516854006C60FA /* libsqlite3.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +48,18 @@
 		00BD9B851C50CB5F006C60FA /* hello-worldTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "hello-worldTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		00BD9B891C50CB5F006C60FA /* hello_worldTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hello_worldTests.swift; sourceTree = "<group>"; };
 		00BD9B8B1C50CB5F006C60FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00BD9B941C5167E4006C60FA /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		00BD9B951C5167E4006C60FA /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		00BD9B981C51680A006C60FA /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		00BD9B9A1C516812006C60FA /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		00BD9B9C1C516818006C60FA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		00BD9B9E1C51681F006C60FA /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		00BD9BA01C516825006C60FA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		00BD9BA21C51682E006C60FA /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		00BD9BA41C516834006C60FA /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		00BD9BA61C51683E006C60FA /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		00BD9BA81C516849006C60FA /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		00BD9BAA1C516854006C60FA /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +67,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00BD9BAB1C516854006C60FA /* libsqlite3.tbd in Frameworks */,
+				00BD9BA91C516849006C60FA /* libz.tbd in Frameworks */,
+				00BD9BA71C51683E006C60FA /* SystemConfiguration.framework in Frameworks */,
+				00BD9BA51C516834006C60FA /* StoreKit.framework in Frameworks */,
+				00BD9BA31C51682E006C60FA /* Security.framework in Frameworks */,
+				00BD9BA11C516825006C60FA /* QuartzCore.framework in Frameworks */,
+				00BD9B9F1C51681F006C60FA /* CoreLocation.framework in Frameworks */,
+				00BD9B9D1C516818006C60FA /* CoreGraphics.framework in Frameworks */,
+				00BD9B9B1C516812006C60FA /* CFNetwork.framework in Frameworks */,
+				00BD9B991C51680A006C60FA /* AudioToolbox.framework in Frameworks */,
+				00BD9B971C5167E4006C60FA /* Parse.framework in Frameworks */,
+				00BD9B961C5167E4006C60FA /* Bolts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +95,18 @@
 		00BD9B681C50CB5F006C60FA = {
 			isa = PBXGroup;
 			children = (
+				00BD9BAA1C516854006C60FA /* libsqlite3.tbd */,
+				00BD9BA81C516849006C60FA /* libz.tbd */,
+				00BD9BA61C51683E006C60FA /* SystemConfiguration.framework */,
+				00BD9BA41C516834006C60FA /* StoreKit.framework */,
+				00BD9BA21C51682E006C60FA /* Security.framework */,
+				00BD9BA01C516825006C60FA /* QuartzCore.framework */,
+				00BD9B9E1C51681F006C60FA /* CoreLocation.framework */,
+				00BD9B9C1C516818006C60FA /* CoreGraphics.framework */,
+				00BD9B9A1C516812006C60FA /* CFNetwork.framework */,
+				00BD9B981C51680A006C60FA /* AudioToolbox.framework */,
+				00BD9B941C5167E4006C60FA /* Bolts.framework */,
+				00BD9B951C5167E4006C60FA /* Parse.framework */,
 				00BD9B731C50CB5F006C60FA /* hello-world */,
 				00BD9B881C50CB5F006C60FA /* hello-worldTests */,
 				00BD9B721C50CB5F006C60FA /* Products */,
@@ -327,6 +375,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "hello-world/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.northwestern.mhealth.hello-world";
@@ -338,6 +390,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "hello-world/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.northwestern.mhealth.hello-world";
