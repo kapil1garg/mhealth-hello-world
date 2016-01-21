@@ -23,7 +23,7 @@
                                     <constraint firstAttribute="width" constant="149" id="nhM-tH-eiA"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" returnKeyType="done"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Threshold" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C9L-WI-eGV">
                                 <rect key="frame" x="261" y="236" width="78" height="21"/>
@@ -92,6 +92,7 @@
                     <connections>
                         <outlet property="numberSteps" destination="6V6-EN-crx" id="XbG-Lh-Vhb"/>
                         <outlet property="thresholdText" destination="Xa5-jy-8TO" id="xh4-Jp-rxE"/>
+                        <outlet property="thresholdValue" destination="qLz-wu-7Zd" id="IXf-ns-P66"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
