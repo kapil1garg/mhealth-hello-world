@@ -104,16 +104,16 @@ class ViewController: UIViewController {
                 self.thresholdText.text = "Hello"
             }
         } else {
-            let alertView:UIAlertView = UIAlertView()
-            alertView.title = "Invalid threshold"
-            alertView.message = "Threshold must be an integer"
-            alertView.delegate = self
-            alertView.addButtonWithTitle("OK")
-            alertView.show()
+            // alert user that threshold value must be an integer
+            let alertController = UIAlertController(title: "Invalid Threshold", message: "Threshold must be an integer", preferredStyle: .Alert)
+            let OKAction = UIAlertAction(title: "OK", style: .Default) { (action) in
+                return true
+            }
+            alertController.addAction(OKAction)
+            self.presentViewController(alertController, animated: true) {
+                return true
+            }
         }
-        
-    
     }
-
 }
 
