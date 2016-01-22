@@ -45,11 +45,8 @@ class ViewController: UIViewController {
         // begin step tracking
         if(CMPedometer.isStepCountingAvailable()) {
             self.pedoMeter.startPedometerUpdatesFromDate(beginningOfDay!, withHandler: { data, error in
-                dispatch_async(dispatch_get_main_queue(), { () -> Void in
-                    if (error == nil) {
-                        // update number of steps on screen
-                        self.numberSteps.text = "\(data!.numberOfSteps)"
-                        
+                if (error == nil) {
+                    dispatch_async(dispatch_get_main_queue(), { () -> Void in
                         // post step value to parse
                         let newStepCount = PFObject(className: "pedometer_data")
                         newStepCount["steps"] = data?.numberOfSteps
@@ -57,12 +54,17 @@ class ViewController: UIViewController {
                             print("Object has been saved.")
                         }
                         
-                        // check to see if threshold is met
+                        // update number of steps on screen
+                        self.numberSteps.text = "\(data!.numberOfSteps)"
+                        
+                        // set threshold text based on value
                         if (data?.numberOfSteps as! Int > self.stepThreshold) {
                             self.thresholdText.text = "World"
+                        } else {
+                            self.thresholdText.text = "Hello"
                         }
-                    }
-                })
+                    })
+                }
             })
         }
     }
