@@ -74,6 +74,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gFt-K0-QJd">
                                 <rect key="frame" x="330" y="265" width="96" height="30"/>
                                 <state key="normal" title="Set Threshold"/>
+                                <connections>
+                                    <action selector="setThreshold:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wpW-Y9-HdE"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>

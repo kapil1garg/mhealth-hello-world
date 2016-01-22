@@ -67,13 +67,53 @@ class ViewController: UIViewController {
                 }
             })
         }
+        
+        //Looks for single or multiple taps.
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
+        view.addGestureRecognizer(tap)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    //Calls this function when the tap is recognized.
+    func dismissKeyboard(){
+        //Causes the view (or one of its embedded text fields) to resign the first responder status.
+        view.endEditing(true)
+    }
 
+    @IBAction func setThreshold(sender: AnyObject) {
+        // disable editing
+        dismissKeyboard()
+        
+        // get string from field and convert to int if possible
+        let newThreshold: String = thresholdValue.text!
+        let newThresholdInt = Int(newThreshold)
+        
+        if (newThresholdInt != nil) {
+            // set new threshold
+            self.stepThreshold = newThresholdInt!
+            
+            // update threshold text
+            let numberStepsInt = Int(self.numberSteps.text!)
+            if (numberStepsInt > self.stepThreshold) {
+                self.thresholdText.text = "World"
+            } else {
+                self.thresholdText.text = "Hello"
+            }
+        } else {
+            let alertView:UIAlertView = UIAlertView()
+            alertView.title = "Invalid threshold"
+            alertView.message = "Threshold must be an integer"
+            alertView.delegate = self
+            alertView.addButtonWithTitle("OK")
+            alertView.show()
+        }
+        
+    
+    }
 
 }
 
